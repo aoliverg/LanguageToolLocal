@@ -3,7 +3,7 @@ Easy-to-run local version of LanguageTool
 
 ## How to download and run the server
 
-1. Download the zip file in the last release.
+1. Download the zip file in the last release:[https://github.com/aoliverg/LanguageToolLocal/releases/tag/v.6.6]
 2. Unzip it in any folder of your computer
 3. In Windows double-clic in startserver.bat; In Linux or Mac write in terminal `./startserver.sh`
 4. In Linux and Mac you need to have java installed; in Windows, the required java version is distributed in the zip and you don't need to install anything.
