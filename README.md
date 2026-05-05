@@ -11,12 +11,12 @@ Easy-to-run local version of LanguageTool
 ## How to configure the Google Chrome plugin
 1. Open the LanguageTool plugin in Chrome and select Settings. 
 2. Go to advanced settings (only for professional users).
-3. Select Language tool server - Another server (requires a running LanguageTool server)
-4. Write `http://localhost:8081/v2`
-5. Save the configuration
-6. Now you have Language tools running in your browser
+3. Select Language tool server - Local server (localhost)
+4. Save the configuration
+5. Now you have Language tools running in your browser
 
 ## How to run language tool in startup in Windows
+
 To make LanguageTool start automatically every time you turn on your computer, follow these simple steps:
 
 **Method 1: Automatic Setup (Recommended)**
