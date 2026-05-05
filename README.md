@@ -16,47 +16,28 @@ Easy-to-run local version of LanguageTool
 5. Save the configuration
 6. Now you have Language tools running in your browser
 
-## How to run the server at startup
-If you want to run the server when you start your computer:
+## How to run language tool in startup in Windows
+To make LanguageTool start automatically every time you turn on your computer, follow these simple steps:
 
-**Method 1: This method will open a terminal window (which you can minimize) every time you log in.**
+**Method 1: Automatic Setup (Recommended)**
 
-1.1 Create a Batch Script:
+This is the easiest way. We have included a script that does all the hard work for you.
 
-Open Notepad.
+Open the folder where you unzipped LanguageTool.
 
-Paste the following code (adjust the path to where you unzipped LanguageTool):
+Find the file named `arrencaeniniciar.bat` and double-click it.
 
-```
-@echo off
-cd "C:\ruta\a\la\teva\carpeta\LanguageTool"
-java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin "*"
-```
+That's it! A shortcut has been created in your Windows Startup folder. From now on, the server will start automatically in the background (hidden) whenever you log in.
 
-Save the file as languagetool_server.bat.
+**Method 2: Manual Shortcut**
 
-Add to Startup:
+If you prefer to do it yourself or the script above doesn't work:
 
-Press `Win + R` on your keyboard.
+Right-click on the file languagetool_invisible.vbs and select Create shortcut.
 
-Type shell:startup and hit Enter. This opens the Startup folder.
+Press Win + R on your keyboard, type shell:startup, and hit Enter.
 
-Right-click and drag your languagetool_server.bat file into this folder and select "Create shortcuts here".
+Move the shortcut you just created into this folder.
 
-Now, every time you turn on your PC and log in, the server will start automatically.
-
-**Method 2: The "Silent" Way (Task Scheduler)**
-
-If you don't want a terminal window popping up, use the Task Scheduler to run it in the background.
-
-Search for "Task Scheduler" in the Windows Start menu and open it.
-
-Click "Create Basic Task..." on the right sidebar.
-
-Name: LanguageTool Server.
-* Trigger: Select "When I log on".
-* Action: Select "Start a program".
-* Program/script: Browse and select your languagetool_server.bat (created in Method 1).
-* Finish: Click Finish.
-
-Pro Tip: To make it truly invisible, right-click the task in the list, go to Properties, and under the "General" tab, select "Run whether user is logged on or not". (Note: This might require your Windows password).
+Pro Tip: By using the .vbs file, the server will run in "silent mode." You won't see any black terminal windows, but the server will be active and ready to check your texts at localhost:8081.
+Windows password).
