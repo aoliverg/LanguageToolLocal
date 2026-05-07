@@ -1,21 +1,23 @@
 # LanguageToolLocal
 Easy-to-run local version of LanguageTool
+Now available for Mac seamlessly. 
 
 ## How to download and run the server
 
-1. Download the zip file in the last release:[https://github.com/aoliverg/LanguageToolLocal/releases/tag/v.6.6]
+1. Download the zip file in the last release:[https://github.com/aoliverg/LanguageToolLocal/releases/tag/v.6.6] (available for Windows and Mac (-Mac.zip)). For Linux download the Windows version. 
 2. Unzip it in any folder of your computer
-3. In Windows double-clic in startserver.bat; In Linux or Mac write in terminal `./startserver.sh`
-4. In Linux and Mac you need to have java installed; in Windows, the required java version is distributed in the zip and you don't need to install anything.
+3. In Windows double-clic in startserver.bat; in Mac double clic in startserver.command; in Linux or Mac write in terminal `./startserver.sh` (give permissions with chmod +x)
+4. In Linux you need to have java installed; in Windows and Mac, the required java version is distributed in the zip and you don't need to install anything.
 
 ## How to configure the Google Chrome plugin
+0. If you don't have the plugin installed go to languagetool.org to install it. Firefox instructions are almost the same.
 1. Open the LanguageTool plugin in Chrome and select Settings. 
 2. Go to advanced settings (only for professional users).
 3. Select Language tool server - Local server (localhost)
 4. Save the configuration
 5. Now you have Language tools running in your browser
 
-## How to run language tool in startup in Windows
+## How to run language tool in startup in Windows and Mac
 
 To make LanguageTool start automatically every time you turn on your computer, follow these simple steps:
 
@@ -25,11 +27,11 @@ This is the easiest way. We have included a script that does all the hard work f
 
 Open the folder where you unzipped LanguageTool.
 
-Find the file named `arrencaeniniciar.bat` and double-click it.
+Find the file named `arrencaeniniciar.bat` (Windows) or `arrencaeniniciar.command`(Mac) and double-click it.
 
 That's it! A shortcut has been created in your Windows Startup folder. From now on, the server will start automatically in the background (hidden) whenever you log in.
 
-**Method 2: Manual Shortcut**
+**Method 2: Manual Shortcut (Windows only)**
 
 If you prefer to do it yourself or the script above doesn't work:
 
