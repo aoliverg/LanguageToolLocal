@@ -1,0 +1,10 @@
+build/
+dist/
+libs/
+jdk*/
+*.class
+*.jar
+*.tar.gz
+*.zip
+*.exe
+*.dmg
