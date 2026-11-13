@@ -3,7 +3,6 @@
 🌐 **Idioma / Language:** [Català](#català) | [English](#english) | [Español](#español)
 
 ![LanguageToolLocal Screenshot](screenshot.png)
-*(Substitueix `screenshot.png` pel nom real de la imatge que pugis al repositori / Replace `screenshot.png` with your actual image filename)*
 
 ---
 
