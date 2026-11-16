@@ -12,7 +12,7 @@
 
 ### 1. Descàrrega i arrencada (Windows, macOS i Linux)
 
-1. Ves a l'apartat de **[Releases](https://github.com/aoliverg/LanguageToolLocal/releases)** i descarrega el paquet corresponent al teu sistema operatiu:
+1. Ves a l'apartat de [**Releases**](https://github.com/aoliverg/LanguageToolLocal/releases) i descarrega el paquet corresponent al teu sistema operatiu:
    * **Windows:** `LanguageToolLocal-Windows.zip`
    * **macOS:** `LanguageToolLocal-Mac-AppleSilicon.dmg` (Macs amb xip M1/M2/M3/M4) o `LanguageToolLocal-Mac-Intel.dmg` (Macs antics amb Intel)
    * **Linux:** `LanguageToolLocal-Linux.tar.gz`
@@ -20,11 +20,19 @@
 2. **Com posar-lo en marxa:**
    * **Windows:** Descomprimeix el fitxer `.zip` en una carpeta (per exemple, dins de *Documents* o *Programes*) i fes doble clic sobre **`LanguageToolLocal.exe`**. *(Si Windows mostra un avís de SmartScreen, fes clic a "Més informació" -> "Executa igualment").*
    * **macOS:** Obre el fitxer `.dmg`, arrossega **`LanguageToolLocal`** a la carpeta *Aplicacions* i obre'l.
-     > **⚠️ Nota per a usuaris de macOS (primer inici):** Com que l'aplicació no està signada amb un certificat comercial d'Apple, macOS la bloquejarà la primera vegada amb l'avís *"no s'ha pogut verificar el desenvolupador"*. Per autoritzar-la:
-     > 1. Fes clic a **Fet** (o *Cancel·la*) a l'avís.
-     > 2. Obre **Configuració del Sistema** -> **Privadesa i seguretat**.
-     > 3. Baixa fins a l'apartat **Seguretat** i fes clic a **Obre igualment** al costat del missatge sobre *LanguageToolLocal*.
-     > *(Alternativament, pots obrir el Terminal i executar: `xattr -cr /Applications/LanguageToolLocal.app`)*.
+
+     > **⚠️ Nota per a usuaris de macOS (primer inici):** Com que l'aplicació no està signada amb un certificat comercial d'Apple, macOS la bloquejarà la primera vegada amb l'avís *"no s'ha pogut verificar el desenvolupador"*. Pots autoritzar-la amb qualsevol d'aquestes dues opcions:
+     >
+     > * **Opció 1 (Des de la Configuració del Sistema — recomanada):**
+     >   1. Fes clic a **Fet** (o *Cancel·la*) a l'avís de bloqueig.
+     >   2. Obre **Configuració del Sistema** -> **Privadesa i seguretat**.
+     >   3. Baixa fins a l'apartat **Seguretat** i fes clic a **Obre igualment** al costat del missatge sobre *LanguageToolLocal*.
+     > * **Opció 2 (Amb clic dret al Finder):**
+     >   1. Obre la carpeta **Aplicacions**, fes clic amb el **botó dret** (o `Control` + clic) sobre **`LanguageToolLocal`** i tria **Obre**.
+     >   2. A la finestra emergent, fes clic al botó **Obre** per confirmar.
+     >
+     > *(Si encara persisteix el bloqueig, obre el Terminal i executa: `xattr -cr /Applications/LanguageToolLocal.app`)*.
+
    * **Linux:** Descomprimeix el fitxer `.tar.gz` i fes doble clic sobre **`Inicia_LanguageTool`** (o executa `./LanguageToolLocal/bin/LanguageToolLocal` des del terminal).
 
 3. **Ús de l'aplicació:**
@@ -50,18 +58,18 @@ La configuració és **exactament la mateixa a tots els navegadors web**, ja que
 
 Com que el servidor queda actiu a `http://localhost:8081/v2`, també el pots connectar amb altres programes compatibles amb LanguageTool:
 
-- **LibreOffice (Writer, Impress, Calc):** Ves a *Eines -> Opcions -> Configuració de la llengua -> LanguageTool*. Activa'l, deixa el camp de l'URL base amb `http://localhost:8081/v2` (deixa l'usuari i la clau API en blanc) i prem *D'acord*.
-- **Mozilla Thunderbird:** Instal·la el complement oficial *LanguageTool* per al correu i configura el servidor local a les seves opcions.
-- **Altres editors:** També és compatible amb connectors de **Obsidian**, **Visual Studio Code** (extensió *LTeX+*) o **TeXstudio**.
+* **LibreOffice (Writer, Impress, Calc):** Ves a *Eines -> Opcions -> Configuració de la llengua -> LanguageTool*. Activa'l, deixa el camp de l'URL base amb `http://localhost:8081/v2` (deixa l'usuari i la clau API en blanc) i prem *D'acord*.
+* **Mozilla Thunderbird:** Instal·la el complement oficial *LanguageTool* per al correu i configura el servidor local a les seves opcions.
+* **Altres editors:** També és compatible amb connectors de **Obsidian**, **Visual Studio Code** (extensió *LTeX+*) o **TeXstudio**.
 
 ---
 
 ### 4. Compilació des del codi font (per a desenvolupadors)
 
 Si vols compilar el projecte tu mateix, consulta les guies específiques:
-- [Instruccions per a Linux](readme-linux.md)
-- [Instruccions per a Windows](readme-windows.md)
-- [Instruccions per a macOS](readme-mac.md)
+* [Instruccions per a Linux](readme-linux.md)
+* [Instruccions per a Windows](readme-windows.md)
+* [Instruccions per a macOS](readme-mac.md)
 
 ---
 ---
@@ -72,7 +80,7 @@ Si vols compilar el projecte tu mateix, consulta les guies específiques:
 
 ### 1. Download and Launch (Windows, macOS, and Linux)
 
-1. Go to the **[Releases](https://github.com/aoliverg/LanguageToolLocal/releases)** section and download the package for your operating system:
+1. Go to the [**Releases**](https://github.com/aoliverg/LanguageToolLocal/releases) section and download the package for your operating system:
    * **Windows:** `LanguageToolLocal-Windows.zip`
    * **macOS:** `LanguageToolLocal-Mac-AppleSilicon.dmg` (M1/M2/M3/M4 Macs) or `LanguageToolLocal-Mac-Intel.dmg` (older Intel Macs)
    * **Linux:** `LanguageToolLocal-Linux.tar.gz`
@@ -80,11 +88,19 @@ Si vols compilar el projecte tu mateix, consulta les guies específiques:
 2. **How to run it:**
    * **Windows:** Extract the `.zip` archive into a folder and double-click **`LanguageToolLocal.exe`**. *(If Windows SmartScreen appears, click "More info" -> "Run anyway").*
    * **macOS:** Open the `.dmg` file, drag **`LanguageToolLocal`** into your *Applications* folder, and launch it.
-     > **⚠️ Note for macOS users (first launch):** Because the app is not notarized with a paid Apple Developer certificate, macOS Gatekeeper will block it the first time with an *"unidentified developer"* warning. To allow it:
-     > 1. Click **Done** (or *Cancel*) on the popup dialog.
-     > 2. Open **System Settings** -> **Privacy & Security**.
-     > 3. Scroll down to the **Security** section and click **Open Anyway** next to the message about *LanguageToolLocal*.
-     > *(Alternatively, you can open Terminal and run: `xattr -cr /Applications/LanguageToolLocal.app`)*.
+
+     > **⚠️ Note for macOS users (first launch):** Because the app is not notarized with a paid Apple Developer certificate, macOS Gatekeeper will block it the first time with an *"unidentified developer"* warning. You can allow it using either of these two options:
+     >
+     > * **Option 1 (From System Settings — recommended):**
+     >   1. Click **Done** (or *Cancel*) on the popup dialog.
+     >   2. Open **System Settings** -> **Privacy & Security**.
+     >   3. Scroll down to the **Security** section and click **Open Anyway** next to the message about *LanguageToolLocal*.
+     > * **Option 2 (Right-click in Finder):**
+     >   1. Open your **Applications** folder, **right-click** (or `Control` + click) on **`LanguageToolLocal`**, and select **Open**.
+     >   2. Click **Open** again in the confirmation dialog.
+     >
+     > *(If macOS still blocks it, open Terminal and run: `xattr -cr /Applications/LanguageToolLocal.app`)*.
+
    * **Linux:** Extract the `.tar.gz` archive and double-click **`Inicia_LanguageTool`** (or run `./LanguageToolLocal/bin/LanguageToolLocal` from the terminal).
 
 3. **Using the app:**
@@ -110,18 +126,18 @@ The configuration process is **identical across all web browsers**, as they all 
 
 Because the server runs at `http://localhost:8081/v2`, you can also connect it to other desktop software:
 
-- **LibreOffice (Writer, Impress, Calc):** Go to *Tools -> Options -> Language Settings -> LanguageTool*. Enable it, set the Base URL to `http://localhost:8081/v2` (leave username and API key blank), and click *OK*.
-- **Mozilla Thunderbird:** Install the official *LanguageTool* extension and point it to the local server in its settings.
-- **Other Editors:** Works seamlessly with plugins for **Obsidian**, **Visual Studio Code** (*LTeX+* extension), and **TeXstudio**.
+* **LibreOffice (Writer, Impress, Calc):** Go to *Tools -> Options -> Language Settings -> LanguageTool*. Enable it, set the Base URL to `http://localhost:8081/v2` (leave username and API key blank), and click *OK*.
+* **Mozilla Thunderbird:** Install the official *LanguageTool* extension and point it to the local server in its settings.
+* **Other Editors:** Works seamlessly with plugins for **Obsidian**, **Visual Studio Code** (*LTeX+* extension), and **TeXstudio**.
 
 ---
 
 ### 4. Building from Source (For Developers)
 
 If you want to build the packages yourself, check the platform-specific guides:
-- [Linux Build Instructions](readme-linux.md)
-- [Windows Build Instructions](readme-windows.md)
-- [macOS Build Instructions](readme-mac.md)
+* [Linux Build Instructions](readme-linux.md)
+* [Windows Build Instructions](readme-windows.md)
+* [macOS Build Instructions](readme-mac.md)
 
 ---
 ---
@@ -132,7 +148,7 @@ If you want to build the packages yourself, check the platform-specific guides:
 
 ### 1. Descarga y ejecución (Windows, macOS y Linux)
 
-1. Ve a la sección de **[Releases](https://github.com/aoliverg/LanguageToolLocal/releases)** y descarga el paquete correspondiente a tu sistema operativo:
+1. Ve a la sección de [**Releases**](https://github.com/aoliverg/LanguageToolLocal/releases) y descarga el paquete correspondiente a tu sistema operativo:
    * **Windows:** `LanguageToolLocal-Windows.zip`
    * **macOS:** `LanguageToolLocal-Mac-AppleSilicon.dmg` (Mac con chip M1/M2/M3/M4) o `LanguageToolLocal-Mac-Intel.dmg` (Mac antiguos con Intel)
    * **Linux:** `LanguageToolLocal-Linux.tar.gz`
@@ -140,11 +156,19 @@ If you want to build the packages yourself, check the platform-specific guides:
 2. **Cómo ponerlo en marcha:**
    * **Windows:** Descomprime el archivo `.zip` en una carpeta y haz doble clic sobre **`LanguageToolLocal.exe`**. *(Si aparece el aviso de Windows SmartScreen, haz clic en "Más información" -> "Ejecutar de todas formas").*
    * **macOS:** Abre el archivo `.dmg`, arrastra **`LanguageToolLocal`** a la carpeta *Aplicaciones* y ábrelo.
-     > **⚠️ Nota para usuarios de macOS (primer inicio):** Dado que la aplicación no está firmada con un certificado comercial de Apple, macOS la bloqueará la primera vez con el aviso *"no se puede verificar el desarrollador"*. Para autorizarla:
-     > 1. Haz clic en **Listo** (o *Cancelar*) en el aviso.
-     > 2. Abre **Ajustes del Sistema** -> **Privacidad y seguridad**.
-     > 3. Baja hasta el apartado **Seguridad** y haz clic en **Abrir igualmente** junto al mensaje sobre *LanguageToolLocal*.
-     > *(Alternativamente, puedes abrir el Terminal y ejecutar: `xattr -cr /Applications/LanguageToolLocal.app`)*.
+
+     > **⚠️ Nota para usuarios de macOS (primer inicio):** Dado que la aplicación no está firmada con un certificado comercial de Apple, macOS la bloqueará la primera vez con el aviso *"no se puede verificar el desarrollador"*. Puedes autorizarla mediante cualquiera de estas dos opciones:
+     >
+     > * **Opción 1 (Desde Ajustes del Sistema — recomendada):**
+     >   1. Haz clic en **Listo** (o *Cancelar*) en el aviso.
+     >   2. Abre **Ajustes del Sistema** -> **Privacidad y seguridad**.
+     >   3. Baja hasta el apartado **Seguridad** y haz clic en **Abrir igualmente** junto al mensaje sobre *LanguageToolLocal*.
+     > * **Opción 2 (Con clic derecho en el Finder):**
+     >   1. Abre la carpeta **Aplicaciones**, haz **clic derecho** (o `Control` + clic) sobre **`LanguageToolLocal`** y selecciona **Abrir**.
+     >   2. Haz clic en **Abrir** de nuevo en el cuadro de confirmación.
+     >
+     > *(Si sigue bloqueada, abre el Terminal y ejecuta: `xattr -cr /Applications/LanguageToolLocal.app`)*.
+
    * **Linux:** Descomprime el archivo `.tar.gz` y haz doble clic sobre **`Inicia_LanguageTool`** (o ejecuta `./LanguageToolLocal/bin/LanguageToolLocal` desde la terminal).
 
 3. **Uso de la aplicación:**
@@ -170,15 +194,15 @@ La configuración es **exactamente la misma en todos los navegadores web**, ya q
 
 Como el servidor permanece activo en `http://localhost:8081/v2`, también puedes conectarlo con otros programas compatibles:
 
-- **LibreOffice (Writer, Impress, Calc):** Ve a *Herramientas -> Opciones -> Configuración de idioma -> LanguageTool*. Actívalo, escribe `http://localhost:8081/v2` en el campo de URL base (deja usuario y clave API en blanco) y pulsa *Aceptar*.
-- **Mozilla Thunderbird:** Instala el complemento oficial *LanguageTool* y selecciona el servidor local en sus opciones.
-- **Otros editores:** También es compatible con extensiones para **Obsidian**, **Visual Studio Code** (extensión *LTeX+*) o **TeXstudio**.
+* **LibreOffice (Writer, Impress, Calc):** Ve a *Herramientas -> Opciones -> Configuración de idioma -> LanguageTool*. Actívalo, escribe `http://localhost:8081/v2` en el campo de URL base (deja usuario y clave API en blanco) y pulsa *Aceptar*.
+* **Mozilla Thunderbird:** Instala el complemento oficial *LanguageTool* y selecciona el servidor local en sus opciones.
+* **Otros editores:** También es compatible con extensiones para **Obsidian**, **Visual Studio Code** (extensión *LTeX+*) o **TeXstudio**.
 
 ---
 
 ### 4. Compilación desde el código fuente (para desarrolladores)
 
 Si deseas compilar los paquetes por tu cuenta, consulta las guías específicas:
-- [Instrucciones para Linux](readme-linux.md)
-- [Instrucciones para Windows](readme-windows.md)
-- [Instrucciones para macOS](readme-mac.md)
+* [Instrucciones para Linux](readme-linux.md)
+* [Instrucciones para Windows](readme-windows.md)
+* [Instrucciones para macOS](readme-mac.md)
